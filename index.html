@@ -73,7 +73,7 @@
             <!-- Tab: Manual input pixel -->
             <div class="form__manual" v-else style="display: block;">
                 <p class="form__tag">Name this pixel</p>
-                <input type="text" placeholder="Input your pixel name" class="form__input" v-model="pixelName">
+                <input type="text" placeholder="Input your pixel name" class="form__input" v-model="pixelName" :class="{ 'error-border' : isContainNumber == true }">
                 <p v-show="isContainNumber" class="error-message">Please fill letter only</p>
                 <p class="form__tag">Enter Facebook Pixel ID</p>
                 <input type="number" placeholder="Input your pixel id" class="form__input" pattern="[0-9]" min="1" required>

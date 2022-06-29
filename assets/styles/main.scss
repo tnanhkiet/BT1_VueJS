@@ -179,6 +179,7 @@ html {
     font-weight: 500;
 }
 
+
 .form__tag {
     margin-top: 2rem;
     font-weight: 500;
@@ -196,6 +197,11 @@ html {
     background: #FFFFFF;
     border: $border;
     border-radius: 0.4rem;
+}
+
+.error-border {
+    border-color: #df4759;
+    outline-color: #df4759;
 }
 
 .form__conversion-api {

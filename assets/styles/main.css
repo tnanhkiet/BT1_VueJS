@@ -223,6 +223,11 @@ html {
   border-radius: 0.4rem;
 }
 
+.error-border {
+  border-color: #df4759;
+  outline-color: #df4759;
+}
+
 .form__conversion-api {
   position: relative;
   margin-top: 2rem;
