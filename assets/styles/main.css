@@ -84,10 +84,6 @@ html {
   color: #5B86E5;
 }
 
-.form__auto {
-  display: none;
-}
-
 .form__auto-account {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -193,11 +189,8 @@ html {
   color: #5B86E5;
 }
 
-.form__manual {
-  display: none;
-}
-
 .error-message {
+  margin-top: 0.4rem;
   font-size: 1.4rem;
   color: #df4759;
   font-weight: 500;

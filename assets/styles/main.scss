@@ -84,7 +84,6 @@ html {
 }
 
 .form__auto {
-    display: none;
     &-account {
         display: flex;
         align-items: center;
@@ -170,10 +169,11 @@ html {
 }
 
 .form__manual {
-    display: none;
+
 }
 
 .error-message {
+    margin-top: 0.4rem;
     font-size: 1.4rem;
     color: #df4759;
     font-weight: 500;

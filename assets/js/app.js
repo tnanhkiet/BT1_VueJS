@@ -97,10 +97,8 @@ new Vue({
                 return this.listPixelAccount.filter((el) => el.parentId == this.businessAccountId)
             }
         },
-        isContainNumber() {
-          if (this.pixelName) {
-              return this.firstSubmit && /[0-9]/i.test(this.pixelName);
-          }
+        validatePixelName() {
+            return this.firstSubmit && /[0-9]/.test(this.pixelName);
         }
     }
 })

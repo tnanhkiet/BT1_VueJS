@@ -29,7 +29,7 @@
         <form action="" class="form__group" @submit.prevent="onSubmit">
 
             <!-- Tab: Auto input pixel -->
-            <div class="form__auto" v-if="currentTab == 1" style="display: block;">
+            <div class="form__auto" v-if="currentTab == 1">
                 <div class="form__auto-account">
                     <div class="form__auto-account-user">
                         <div class="form__auto-account-group">
@@ -71,10 +71,10 @@
             </div>
 
             <!-- Tab: Manual input pixel -->
-            <div class="form__manual" v-else style="display: block;">
+            <div class="form__manual" v-else>
                 <p class="form__tag">Name this pixel</p>
-                <input type="text" placeholder="Input your pixel name" class="form__input" v-model="pixelName" :class="{ 'error-border' : isContainNumber == true }">
-                <p v-show="isContainNumber" class="error-message">Please fill letter only</p>
+                <input type="text" placeholder="Input your pixel name" class="form__input" v-model="pixelName" :class="{ 'error-border' : validatePixelName == true }" required>
+                <p v-show="validatePixelName" class="error-message">Please fill letter only</p>
                 <p class="form__tag">Enter Facebook Pixel ID</p>
                 <input type="number" placeholder="Input your pixel id" class="form__input" pattern="[0-9]" min="1" required>
             </div>
@@ -97,8 +97,11 @@
                 </p>
             </div>
             <div class="form__notification">
-                <div class="form__notification-icon">
+                <div class="form__notification-icon" v-if="currentTab == 1">
                     <img src="./assets/icon/bell.svg">
+                </div>
+                <div class="form__notification-icon" v-else>
+                    <img src="./assets/icon/crown.svg">
                 </div>
                 <p class="form__notification-text">Please <span>UPGRADE</span> your plan to use Conversion API</p>
             </div>
