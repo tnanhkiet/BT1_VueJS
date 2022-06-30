@@ -145,6 +145,7 @@ html {
 
 .form__auto-account-btn {
   padding: 1.2rem;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 1.6rem;
@@ -208,6 +209,7 @@ html {
   margin-top: 0.8rem;
   padding: 1.2rem 1.3rem;
   width: 100%;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 1.6rem;
@@ -369,6 +371,7 @@ html {
   width: 10rem;
   height: 3.2rem;
   background: #fff;
+  font-family: 'Inter', sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 16px;
@@ -382,6 +385,7 @@ html {
   width: 30rem;
   height: 3.2rem;
   background: #5B86E5;
+  font-family: 'Inter', sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 16px;
