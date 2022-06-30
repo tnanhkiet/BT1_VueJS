@@ -98,7 +98,10 @@ new Vue({
             }
         },
         validatePixelName() {
-            return this.firstSubmit && /[0-9]/.test(this.pixelName);
+            if (this.pixelName) {
+                return this.firstSubmit && /[0-9]/.test(this.pixelName)
+            }
+            return false
         }
     }
 })
